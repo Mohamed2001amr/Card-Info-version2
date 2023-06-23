@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Personal Info</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+              integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+              crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="style.sass">
+        <link rel="stylesheet" href="css/fontawesome.min.css">
+    </head>
+    <body>
+     
+     <!-- Start setting box -->
+     <div class="setting-box">
+        <div class="toggle-setting">
+         <img src="photo/5.svg">   
+        </div>       
+        <div class="settings-container">
+            <div class="option-box">
+                <h4>Colors</h4>
+                <ul class="colors-list">
+                    <li class="active" data-color="#00ffff"></li>
+                    <li data-color="#FF0000"></li>
+                    <li data-color="#0400FF"></li>
+                    <li data-color="#0AFF22"></li>
+                </ul>
+            </div>
+            
+            <div class="option-box">
+                <h4> Background Option </h4>
+                <div class="random-background">
+                    <span class="yes active" data-background="yes">Yes</span>
+                    <span class="no" data-background="no">No</span>
+                </div>
+            </div>
+            
+            <button class="reset-options"> ( Reset Options )</button>
+        </div>
+     </div>
+     <!-- end setting box -->
+        
+    <!-- Start Nav Bullets -->
+    <div class="nav-bullets">
+        <div class="bullet" data-section=".about-us">
+            <div class="tooltip"> About Us</div>
+        </div>
+        <div class="bullet" data-section=".skills">
+            <div class="tooltip"> Our Skills</div>
+        </div>
+        <div class="bullet" data-section=".gallery">
+            <div class="tooltip"> Our Gallery</div>
+        </div>
+        <div class="bullet" data-section=".timeline">
+            <div class="tooltip"> Timeline</div>
+        </div>
+        <div class="bullet" data-section=".features">
+            <div class="tooltip"> Our Features</div>
+        </div>
+        <div class="bullet" data-section=".testimonials">
+            <div class="tooltip"> Testimonials</div>
+        </div>
+        <div class="bullet" data-section=".contact">
+            <div class="tooltip"> To Contact</div>
+        </div>
+    </div>
+    <!-- End Nav Bullets -->
+    
+     <!-- Start landing page -->
+    
+        <div class="landing-page">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="header-area">
+                    <div class="logo"> Card Info </div>
+                <div class="links-container">
+                    <ul class="links ">
+                        <li style="--clr:#00ade1"> <a href="#about" data-section=".about"> About  </a> </li>
+                        <li style="--clr:#ff6493"> <a href="#skills" data-section=".skills"> Skills  </a> </li>
+                        <li style="--clr:#ffdd1c"> <a href="#gallery" data-section=".gallery"> Gallery </a> </li>
+                        <li style="--clr:#00dc82"> <a href="#timeline" data-section=".timeline"> Timeline  </a> </li>
+                        <li style="--clr:#dc00d4"> <a href="#features" data-section=".features"> Features  </a> </li>
+                        <li style="--clr:#FF7200"> <a href="#testimonials" data-section=".testimonials"> Testimonials  </a> </li>
+                        <li style="--clr:#F6FF00"> <a href="#contact" data-section=".contact"> Contact  </a> </li>
+                    </ul>
+                    <button class="toggle-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                </div>
+            </div>
+            
+            <div class="introduction-text">
+                <h1>I am a <span>Front-End</span> Web Developer </h1>
+                <p>This web site help me to introduce my self by showing an information about me and my work and any think else</p>
+            </div>
+        </div>
+        
+     <!-- end landing page -->
+     
+     <!-- start about us -->
+     <div class="container">
+        <div class="about-us" id="about">
+            <div class="info-box">
+                <h2>About ME</h2>
+                <p> Name <i class="fa-solid fa-signature"></i> : <span> Mohamed Amr Fouad </span> </p>
+                <p> Date of Birth <i class="fa-solid fa-calendar-days"></i> : <span> 2001/1/9 </span> </p>
+                <p> Nationally <i class="fa-solid fa-passport"></i> : <span> Egyptian </span> </p>
+                <p> Address <i class="fa-sharp fa-solid fa-map-location"></i> :  <span> Egypt,Suez </span> </p>
+                <ol>
+                    <p>Languages <i class="fa-solid fa-language"></i> :</p>
+                    <li> <span> Arabic : </span> Mother Language</li>
+                    <li> <span> English : </span> Upper Intermediate</li>
+                    <li> <span> German : </span> Pre Intermediate</li>
+                </ol>
+            </div>
+            <div class="img-box">
+                <img src="photo/me.png" alt="">
+            </div>
+        </div>
+     </div>
+     <!-- end about us -->
+     
+     <!-- start our skills -->
+     <div class="skills" id="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-box">
+                <div class="skill-name">HTML</div>
+                <div class="skill-progress">
+                    <span data-progress="90%"></span>
+                </div>
+            </div>
+            <div class="skills-box">
+                <div class="skill-name">CSS</div>
+                <div class="skill-progress">
+                    <span data-progress="85%"></span>
+                </div>
+            </div>
+            <div class="skills-box">
+                <div class="skill-name">SASS</div>
+                <div class="skill-progress">
+                    <span data-progress="50%"></span>
+                </div>
+            </div>
+            <div class="skills-box">
+                <div class="skill-name">PHP(Laravel)</div>
+                <div class="skill-progress">
+                    <span data-progress="80%"></span>
+                </div>
+            </div>
+            <div class="skills-box">
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-progress">
+                    <span data-progress="70%"></span>
+                </div>
+            </div>
+            <div class="skills-box">
+                <div class="skill-name">VUE.JS</div>
+                <div class="skill-progress">
+                    <span data-progress="50%"></span>
+                </div>
+            </div>
+            <div class="skills-box">
+                <div class="skill-name">JQuery</div>
+                <div class="skill-progress">
+                    <span data-progress="70%"></span>
+                </div>
+            </div>
+            <div class="skills-box">
+                <div class="skill-name">Bootstrap</div>
+                <div class="skill-progress">
+                    <span data-progress="80%"></span>
+                </div>
+            </div>
+                                    
+            <div class="skills-box">
+                <div class="skill-name">MySQL</div>
+                <div class="skill-progress">
+                    <span data-progress="50%"></span>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-- end our skills -->
+     
+     <!-- start My Certificate -->
+     <div class="gallery" id="gallery">
+        <div class="container">
+            <h2>My Certificates </h2>
+            <div class="image-box">
+                <img src="photo/5.jpg" alt="CCNA V7">
+                <img src="photo/6.jpg" alt="JavaScript">
+                <img src="photo/7.jpg" alt="CSS3">
+                <img src="photo/8.jpg" alt="HTML5">
+                <img src="photo/9.jpg" alt="Responsive Design">
+                <img src="photo/10.jpg" alt="Web Design">
+                <img src="photo/12.jpg" alt="MOPAED">
+                <img src="photo/13.jpg" alt="Introduction To CyberSecurity">
+                <img src="photo/14.jpg" alt="Introduction To IOT">
+                <img src="photo/15.jpg" alt="MOPAED">
+            </div>
+        </div>
+     </div>
+     <!-- end My Certificate -->
+     
+     <!-- Start Time Line -->
+     <div class="timeline" id="timeline">
+        <div class="container">
+            <div class="timeline-content">
+                
+                <div class="year">2021</div>
+                
+                <div class="left">
+                    <div class="content">
+                        <h3>St Smart</h3>
+                        <p>Begineer Robotics</p>
+                        <p>Line Follower Car With Arduino</p>
+                        <p>Smart Home Project With Arduino</p>
+                        <p>Cnc Drawing Project With Arduino</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="right">
+                    <div class="content">
+                        <h3>Coursera</h3>
+                        <p>Introduction to HTML5</p>
+                        <p>Introduction to CSS3</p>
+                        <p>Responsive Design</p>
+                        <p>Web Design For EveryBody Capstone </p>
+                        <p>Interactivity With JavaScript</p>
+                    </div>
+                </div>                
+            </div>
+
+            <div class="timeline-content">
+                
+                <div class="year">2023</div>
+                
+                <div class="left">
+                    <div class="content">
+                        <h3>University</h3>
+                        <p>I graduated from Badr University</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>           
+            </div>
+        </div>
+     </div>
+     <!-- End Time Line -->
+     
+     <!-- Start My Service -->
+     <div class="features" id="features">
+        <h2>My Services</h2>
+        <div class="container">
+            <div class="feat-box">
+                <img src="photo/16.jpg" alt="">
+                <h4>UI/UX Design</h4>
+                <p> Design The Template Of The Page</p>
+            </div>
+            
+            <div class="feat-box">
+                <img src="photo/17.jpg" alt="">
+                <h4>Web Development</h4>
+                <p>Design A Responsive Web Page With Require Language</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+     </div>
+     <!-- End My Service -->
+     
+     <!-- Start Testimonials -->
+     <div class="Testimonials" id="testimonials">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="Testimonials-box">
+               <p>we are professional marketeers. we are professional marketeers</p>
+               <div class="person-info">
+                 <h4>SomeOne</h4>
+               </div>
+            </div>
+            
+            <div class="Testimonials-box">
+                <p>we are professional marketeers. we are professional marketeers</p>
+               <div class="person-info">
+                 <h4>SomeOne</h4>
+               </div>
+            </div>
+            
+            <div class="Testimonials-box">
+                <p>we are professional marketeers. we are professional marketeers</p>
+               <div class="person-info">
+                 <h4>SomeOne</h4>
+               </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+     </div>
+     <!-- End Testimonials -->
+     
+     <!-- Start Contact Us -->
+     <div class="contact" id="contact">
+        <div class="overlay"></div>
+        <div class="container">
+            <h2>Contact With Me</h2>
+            <form action="">
+                <div class="icons">
+                    <ul>
+                        <li style="--clr:#1877f2;">
+                            <a href="https://www.facebook.com/mohamed.abuewisha?mibextid=ZbWKwL" target="_blank"> <i class="fa-brands fa-facebook-f"></i> </a>
+                        </li>
+                        <li style="--clr:#ffffff;">
+                            <a href="https://github.com/Mohamed2001amr" target="_blank"> <i class="fa-brands fa-github"></i> </a>
+                        </li>
+                        <li style="--clr:#1877f2;">
+                            <a href="https://www.linkedin.com/in/mohamed-abuewisha-3b57981a3" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+     </div>
+     <!-- End Contact Us -->
+     
+     <!-- Start Footer -->
+     <div class="footer"> Created With Mohamed Amr </div>
+     <!-- End Footer -->
+        
+        <script src="js/main.js"></script>
+    </body>
+</html>
